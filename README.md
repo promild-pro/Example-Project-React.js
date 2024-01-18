@@ -1,3 +1,10 @@
+Test APP
+
+register => Login => dashboard
+
+database register akan disimpan di localStorage perangkat..disarankan hanya dengan laptop
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
