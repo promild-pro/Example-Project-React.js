@@ -3,12 +3,12 @@ const TOKEN = 'Token example'
 export const setUserToken = () => {
   localStorage.setItem(TOKEN, 'token diberikan dalam 1 jam dan silahkan login kembali' )
   const timeout = new Date();
-  timeout.setMinutes(timeout.getMinutes() + 2);
+  timeout.setMinutes(timeout.getMinutes() + 60);
   localStorage.setItem(`${TOKEN}-timeout`, timeout.toISOString());
 
-  setTimeout(() => {
-    localStorage.removeItem(TOKEN)
-  }, 3600 * 1000)
+  // setTimeout(() => {
+  //   localStorage.removeItem(TOKEN)
+  // }, 60*60*1000)
 }
 
 export const getUserToken = () => {

@@ -5,6 +5,7 @@ import store from './redux/store';
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Login from './pages/login';
+import ForgotPassword from './pages/forgotpassword';
 import CreateAkun from './pages/register';
 import Dashboard from './pages/dashboard';
 import Transaction from './pages/transaction';
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: '/create',
     element: <CreateAkun />
+  },
+  {
+    path: '/forgotPassword',
+    element: <ForgotPassword />
   },
   {
     path: '/dashboard',

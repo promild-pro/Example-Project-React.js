@@ -42,7 +42,7 @@ export const Button = ({hanldeButton, textButton}) => {
     <div className="mx-4 my-3">
       <button 
         onClick={hanldeButton}
-        className='bg-green-300 w-full p-5 rounded-xl'>
+        className='bg-green-300 hover:bg-green-400 w-full p-5 rounded-xl font-bold'>
         {textButton}
       </button>
     </div>

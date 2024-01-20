@@ -36,7 +36,7 @@ export const Login = () => {
   }
 
   return(
-    <div className='bg-green-500 w-screen h-svh flex justify-center'>
+    <section className='bg-green-500 w-screen h-svh flex justify-center'>
       <div className='w-1/2 flex justify-center items-center'>
         <div className='w-1/2 '>
           <h1 className='text-center text-4xl font-bold p-5 animate-pulse'>Welcome is Login Example Project !!</h1>
@@ -58,12 +58,12 @@ export const Login = () => {
             <h1 className='text-center text-red-600 italic'>{notif}</h1>
             <Button hanldeButton={hanldeButton} textButton='Login Sekarang' />
             <div className='w-full flex justify-between px-4'>
-              <button>Forgot Password?</button>
+              <button onClick={() => navigate('forgotPassword')}>Forgot Password?</button>
               <button onClick={() => navigate('/create')}>create Account</button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
