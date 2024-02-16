@@ -30,6 +30,8 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'indent': ['error', 2],
     'no-unused-vars': 'warn',
+    // 'node/no-unsupported-features/es-syntax': ['error', { 'ignores': ['modules'] }],
+
 
   },
 };

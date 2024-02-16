@@ -6,9 +6,6 @@ export const setUserToken = () => {
   timeout.setMinutes(timeout.getMinutes() + 60);
   localStorage.setItem(`${TOKEN}-timeout`, timeout.toISOString());
 
-  // setTimeout(() => {
-  //   localStorage.removeItem(TOKEN)
-  // }, 60*60*1000)
 }
 
 export const getUserToken = () => {
